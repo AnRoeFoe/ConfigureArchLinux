@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman --noconfirm -S timeshift neovim firefox base-devel git stow less starship
+sudo pacman --noconfirm -S timeshift neovim firefox base-devel git stow less starship ttf-3270-nerd
 
 mkdir ~/AUR
 cd ~/AUR
