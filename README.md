@@ -56,13 +56,12 @@ This script automates the initial setup of an Arch Linux system by installing co
 ## What the Script Does
 
 1. Installs system packages using `pacman`
-2. Installs terminal emulator (`kitty`) and shell prompt (`starship`)
+2. Installs shell prompt (`starship`)
 3. Sets up AUR by cloning and building `yay`
 4. Installs VS Code from AUR via `yay`
 5. Clones your dotfiles repository from GitHub
 6. Uses `stow` to symlink configuration files for:
    - neovim
-   - kitty
    - starship
    - bash configuration
 
@@ -73,7 +72,6 @@ Your dotfiles should be organized in a repository at `https://github.com/AnRoeFo
 ```
 dotfiles/
 ├── nvim/         # Neovim configuration
-├── kitty/        # Kitty terminal configuration
 ├── starship/     # Starship prompt configuration
 └── bashrc/       # Bash configuration
 ```

@@ -1,7 +1,6 @@
 #!/bin/sh
 
-pacman --noconfirm -S timeshift neovim firefox base-devel git stow
-pacman --noconfirm -S kitty starship
+sudo pacman --noconfirm -S timeshift neovim firefox base-devel git stow less starship
 
 mkdir ~/AUR
 cd ~/AUR
@@ -13,7 +12,9 @@ yay -Sy visual-studio-code-bin
 
 git clone https://github.com/AnRoeFoe/dotfiles.git ~/.repos/dotfiles
 cd ~/.repos/dotfiles
+
+rm -i ~/.bashrc
+
 stow -t ~ nvim
-stow -t ~ kitty
 stow -t ~ starship
 stow -t ~ bashrc
