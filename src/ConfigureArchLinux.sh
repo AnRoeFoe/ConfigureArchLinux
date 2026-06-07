@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman --noconfirm -Sy snap-pac neovim base-devel stow less kitty starship ttf-firacode-nerd gufw
+sudo pacman --noconfirm -Sy neovim base-devel stow less kitty starship ttf-firacode-nerd gufw
 
 mkdir ~/AUR
 cd ~/AUR
@@ -18,6 +18,7 @@ rm -i ~/.bashrc
 stow -t ~ starship
 stow -t ~ bashrc
 stow -t ~ kitty
+stow -t ~ inputrc
 
-git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
 
