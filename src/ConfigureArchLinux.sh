@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman --noconfirm -Sy neovim base-devel stow less kitty starship ttf-firacode-nerd gufw
+sudo pacman --noconfirm -Sy neovim base-devel stow less kitty starship ttf-firacode-nerd gufw zellij secrets
 
 mkdir ~/AUR
 cd ~/AUR
@@ -21,4 +21,3 @@ stow -t ~ kitty
 stow -t ~ inputrc
 
 git clone https://github.com/LazyVim/starter ~/.config/nvim
-
