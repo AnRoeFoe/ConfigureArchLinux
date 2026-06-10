@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman --noconfirm -Sy neovim base-devel stow less kitty starship ttf-firacode-nerd gufw zellij secrets throttled helvum
+sudo pacman --noconfirm -Sy neovim base-devel stow less kitty starship ttf-firacode-nerd gufw zellij secrets throttled helvum pacman-contrib
 
 mkdir ~/AUR
 cd ~/AUR
