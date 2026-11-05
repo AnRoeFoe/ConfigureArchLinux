@@ -4,7 +4,7 @@
 # tools I use most often, then installs my personal shell and Git config.
 
 # Install the core CLI and terminal utilities used for daily work.
-sudo dnf install kitty neovim stow fastfetch
+sudo dnf install kitty neovim stow fastfetch keepassxc
 
 # Add the Starship prompt repository and install the prompt itself.
 sudo dnf copr enable atim/starship
