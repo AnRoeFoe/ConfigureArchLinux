@@ -14,6 +14,8 @@ sudo dnf install starship
 # via Fedora's package manager.
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+
+# Refresh metadata and install the editor itself.
 dnf check-update
 sudo dnf install code
 
@@ -36,3 +38,6 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 git config --global user.name "Max Mustermann"
 git config --global user.email "max.mustermann@web.de"
 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.zip
+unzip FiraCode.zip -d ~/.local/share/fonts
+fc-cache -fv
