@@ -39,6 +39,7 @@ git config --global user.name "Max Mustermann"
 git config --global user.email "max.mustermann@web.de"
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.zip
+mkdir -p ~/.local/share/fonts/FiraCode
 unzip FiraCode.zip -d ~/.local/share/fonts/FiraCode
 fc-cache -fv
 rm FiraCode.zip
