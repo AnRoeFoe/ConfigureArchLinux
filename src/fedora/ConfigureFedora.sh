@@ -38,6 +38,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 git config --global user.name "Max Mustermann"
 git config --global user.email "max.mustermann@web.de"
 
+# Download and install the FiraCode Nerd Font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FiraCode.zip
 mkdir -p ~/.local/share/fonts/FiraCode
 unzip FiraCode.zip -d ~/.local/share/fonts/FiraCode
